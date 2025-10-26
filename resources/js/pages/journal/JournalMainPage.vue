@@ -1,10 +1,9 @@
 <script setup lang="ts">
     import AppLayout from '@/layouts/AppLayout.vue';
-    import {dashboard, journal} from '@/routes';
+    import { journal} from '@/routes';
     import { type BreadcrumbItem } from '@/types';
     import { Head, Link } from '@inertiajs/vue3';
     import PlaceholderPattern from '../../components/PlaceholderPattern.vue';
-    import {ref, reactive} from "vue";
 
     const breadcrumbs: BreadcrumbItem[] = [
         {
@@ -17,7 +16,6 @@
     defineProps([
         'folders'
     ]);
-    const curFolder = reactive({ id: 0 })
 </script>
 
 <template>
